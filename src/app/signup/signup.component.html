@@ -1,0 +1,57 @@
+
+<body>
+    <div class="container">
+        <div class="tittle"><span style="background-color: rgb(6, 87, 141);">KFC Registration Form</span></div>
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Full Name:</span>
+                    <input type="txt" placeholder="Enter your name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Username:</span>
+                    <input type="txt" placeholder="Enter your Username " required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email:</span>
+                    <input type="txt" placeholder="Enter your Email " required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone Number:</span>
+                    <input type="txt" placeholder="Enter your Phone Number " required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Password:</span>
+                    <input type="txt" placeholder="Enter your Password " required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Confim Password:</span>
+                    <input type="txt" placeholder="Enter your Confim Password " required>
+                </div>
+            </div>
+            <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+                <span class="gender-tittle">Gender</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">Male</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">Female</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="gender">prefer not to say</span>
+                    </label>
+                </div>
+            </div>
+        </form>
+        <div class="button">
+            <input type="submit" value="Register" (click)="LogoutUser()">
+        </div>
+    </div>
+</body>

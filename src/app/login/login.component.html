@@ -1,0 +1,26 @@
+<body>
+<div class="center">
+<h1><b>🐔KFC🍗 </b></h1>
+<form [formGroup]="loginfrm"(ngSubmit)="CheckUser()">
+   <div class="txtfield">
+    <input type="text" required autocomplete="off" id="uname" name="uname" formControlName="uname">
+    <span></span>
+   <label>Username:</label>   
+</div> 
+    <div class="txtfield">
+        <input type="password" required id="pwd" name="pwd" formControlName="pwd">
+        <span></span>
+        <label>Password:</label>
+    </div>
+    <div class="pass">forgot password?</div>
+    <div>
+        <button type="submit">Login</button>
+    </div>
+    <form [formGroup]="signuppage"(ngSubmit)="CheckSignup()">
+        <div class="signup">
+            Not a member? <input type="submit" value="signup">
+        </div>
+    </form>
+</form>
+</div>
+</body>

@@ -8,7 +8,7 @@ import { BodyComponent } from './body/body.component';
 import { FoodpageComponent } from './foodpage/foodpage.component';
 
 const routes: Routes = [
-  {path:'',component:LoginComponent},
+  {path:'',redirectTo:'/login', pathMatch:'full' },
   {path:'login',component:LoginComponent},
   {path:'signup',component:SignupComponent},
   {path:'home',component:HomeComponent,canActivate:[CactivateGuard]},
